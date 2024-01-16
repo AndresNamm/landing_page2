@@ -12,12 +12,6 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       <Link href="/">{props.logo}</Link>
     </div>
 
-    <nav>
-      <ul className="navbar flex items-center text-xl font-medium text-gray-800">
-        {props.children}
-      </ul>
-    </nav>
-
     <style jsx>
       {`
         .navbar :global(li:not(:first-child)) {
