@@ -9,11 +9,14 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
 
 const Hero = () => (
-  <Background color="bg-gray-100">
+  <Background color="bg-red-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="https://www.facebook.com/annipilvarimetamisnoustaja">
+          <Link
+            href="https://www.facebook.com/annipilvarimetamisnoustaja"
+            color="lightBlue hover:bg-lightBlue-600"
+          >
             Rohkem infot Facebooki lehel
           </Link>
         </li>
