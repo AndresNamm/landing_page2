@@ -14,7 +14,7 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link
-            href="https://www.facebook.com/annipilvarimetamisnoustaja"
+            href="https://www.facebook.com/imetamisnoustamine"
             color="lightBlue hover:bg-lightBlue-600"
           >
             Rohkem infot Facebooki lehel
@@ -36,7 +36,7 @@ const Hero = () => (
       />
     </Section>
     <header className="text-center">
-      <Link href="https://www.facebook.com/annipilvarimetamisnoustaja">
+      <Link href="https://www.facebook.com/imetamisnoustamine">
         <Button xl>Rohkem infot Facebooki lehel</Button>
       </Link>
     </header>
