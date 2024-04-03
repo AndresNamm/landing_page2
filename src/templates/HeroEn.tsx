@@ -5,23 +5,24 @@ import { Button } from '@/button/Button';
 import { Background } from '../background/Background';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
+import { LogoEn } from './LogoEn';
 
-const Hero = () => (
+const HeroEn = () => (
   <Background color="bg-cream">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
+      <NavbarTwoColumns logo={<LogoEn xl />}>
         <li>
-          <Link href="/en" color="lightBlue hover:bg-lightBlue-600">
-            en
+          <Link href="/" color="lightBlue hover:bg-lightBlue-600">
+            ee
           </Link>
         </li>
+        <li></li>
       </NavbarTwoColumns>
     </Section>
     <div>
       <header className="pb-4 text-center">
         <h1 className="text-3xl font-bold text-red-500 ">
-          Pikaajalise ja laia kogemusega imetamisnõustaja
+          Lactation consultant with wide long-term experience
         </h1>
       </header>
     </div>
@@ -29,30 +30,32 @@ const Hero = () => (
       <div className="max-w-xl text-left leading-normal">
         <ul className="mb-4 list-inside list-disc">
           <li>
-            <b className="text-red-500">Imetamisnõustaja koduvisiidid Tartus</b>{' '}
-            (eesti, vene ja inglise keeles)
+            <b className="text-red-500">lactation consultant´s home visits</b>{' '}
+            (Estonian, Russian and English)
           </li>
-          <li>Imetamisealased loengud (eesti ja inglise keeles)</li>
-          <li>24/7 imetamisnõustaja Sinu taskus (teenus kokkuleppel)</li>
-          <li>Nõustamine video teel üle maailma</li>
+          <li>lectures about breastfeeding in Estonian and English</li>
+          <li>24/7 lactation consultant in Your pocket (special service)</li>
+          <li>online-consultations all over the world</li>
           <li>
-            Sünnituseelne ja sünnitusjärgne imetamisnõustamine (piima vähesus,
-            valu, rinna haigusseisundid, erivajadused, relaktatsioon,
-            võõrutamine)
+            pre-birth and post birth consultations: low milk supply, pain,
+            breast pathologies, special needs, relactations, weaning
           </li>
         </ul>
         <p className="pt-4">
           <u>
-            <b>Hinnakiri</b>
+            <b>Pricelist</b>
           </u>
         </p>
-        <p>Koduvisiit 50 EUR</p>
-        <p>Kuuajane 24/7 imetamisnõustaja teenus 250 EUR/kuu</p>
-        <p>Loengute hind kokkuleppel</p>
+        <p>Home visit 50 EUR</p>
+        <p>
+          One month subsription for 24/7 lactation consultant in Your pocket 250
+          EUR/month
+        </p>
+        <p>Agreed price for lectures</p>
         <p></p>
         <p className="pt-4">
           <u>
-            <b>Kontakt</b>
+            <b>Contact</b>
           </u>
         </p>
         <p>Anni Anastasia Pilvar</p>
@@ -73,10 +76,10 @@ const Hero = () => (
     </Section>
     <header className="text-center">
       <Link href="https://www.facebook.com/imetamisnoustamine">
-        <Button xl>Rohkem infot Facebooki lehel</Button>
+        <Button xl>More info on my Facebook page</Button>
       </Link>
     </header>
   </Background>
 );
 
-export { Hero };
+export { HeroEn };
