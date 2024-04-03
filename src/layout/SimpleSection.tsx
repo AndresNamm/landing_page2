@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 type ISimpleSectionProps = {
   title?: string;
-  description?: string;
+  description?: ReactNode;
   yPadding?: string;
   children?: ReactNode;
 };
@@ -14,13 +14,13 @@ const SimpleSection = (props: ISimpleSectionProps) => (
     }`}
   >
     {(props.title || props.description) && (
-      <div className="mb-1 text-center">
+      <div className="flex justify-center">
         {props.title && (
-          <h2 className="text-4xl font-bold text-gray-900">{props.title}</h2>
+          <h2 className="text-darkgray-900 text-4xl font-bold">
+            {props.title}
+          </h2>
         )}
-        {props.description && (
-          <div className="mt-4 text-xl md:px-20">{props.description}</div>
-        )}
+        {props.description && <div>{props.description}</div>}
       </div>
     )}
   </div>
